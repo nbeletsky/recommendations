@@ -1,3 +1,4 @@
-.img-album-art {
+.img-album-art,
+.img-cover-art {
   max-width: 300px;
 }

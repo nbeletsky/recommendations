@@ -5,7 +5,7 @@ album: What Hath God Wrought?
 album_art_url: https://i1.sndcdn.com/artworks-000143895136-z95u0x-t500x500.jpg
 posted_by: nick
 listen_url: https://soundcloud.com/erasedtapes/immix-ensemble-vessel-what-hath-god-wrought
-amazon_url:
+purchase_url:
 categories: music
 ---
 
