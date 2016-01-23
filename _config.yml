@@ -2,7 +2,7 @@
 title: /r/sigma recommendations
 description: >
   A list of recommendations made in the /r/sigma chat room.
-baseurl: ""
+baseurl: /recommendations
 url: "http://r-sigma.github.io/recommendations/"
 github_username:  r-sigma
 
