@@ -8,4 +8,10 @@ layout: default
   </div>
 </div>
 
-{{ content }}
+{% for post in site.posts %}
+  {% if post.categories contains 'music' %}
+    {% include album.html post=post %}
+  {% elsif post.categories contains 'books' %}
+    {% include book.html post=post %}
+  {% endif %}
+{% endfor %}

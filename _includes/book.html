@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-4">
+      <img class="img-responsive img-cover-art" src="{{ post.cover_art_url }}" alt="{{ post.author }} &mdash; {{ post.title }} &mdash; Cover Art">
+  </div>
+  <div class="col-md-8">
+    <h3>{{ post.author }}</h3>
+    <h4>{{ post.title }}</h4>
+    <h5><em>Posted {{ post.date | date: '%B %-d, %Y, at %l:%M %p' }} by @{{ post.posted_by }}</em></h5>
+    {% if post.content %}
+    <p>{{ post.content }}</p>
+    {% endif %}
+
+    <a class="btn btn-primary" href="{{ post.read_url }}">
+      <i class="fa fa-book"></i> Read
+    </a>
+
+    {% if post.purchase_url %}
+    <a class="btn btn-success" href="{{ post.purchase_url }}">
+      <i class="fa fa-heart"></i> Support the Author
+    </a>
+    {% endif %}
+  </div>
+</div>
+
+<hr>

@@ -9,29 +9,5 @@ layout: default
 </div>
 
 {% for post in site.categories.music %}
-<div class="row">
-  <div class="col-md-4">
-      <img class="img-responsive img-album-art" src="{{ post.album_art_url }}" alt="{{ post.artist }} &mdash; {{ post.album }} &mdash; Album Art">
-  </div>
-  <div class="col-md-8">
-    <h3>{{ post.artist }}</h3>
-    <h4>{{ post.album }}</h4>
-    <h5><em>Posted {{ post.date | date: '%B %-d, %Y, at %l:%M %p' }} by @{{ post.posted_by }}</em></h5>
-    {% if post.content %}
-    <p>{{ post.content }}</p>
-    {% endif %}
-
-    <a class="btn btn-primary" href="{{ post.listen_url }}">
-      <i class="fa fa-play"></i> Listen
-    </a>
-
-    {% if post.purchase_url %}
-    <a class="btn btn-success" href="{{ post.purchase_url }}">
-      <i class="fa fa-heart"></i> Support the Artist
-    </a>
-    {% endif %}
-  </div>
-</div>
-
-<hr>
+{% include album.html post=post %}
 {% endfor %}
